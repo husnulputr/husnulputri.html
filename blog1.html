@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skincare Blog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Archivo', sans-serif;
+    }
+
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: white;
+      z-index: 50;
+      padding: 5rem 1.25rem;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .mobile-menu.active {
+      display: flex;
+    }
+
+    @media (max-width: 768px) {
+      .menu-button {
+        display: block;
+      }
+
+      .desktop-menu {
+        display: none;
+      }
+    }
+
+    @media (min-width: 769px) {
+      .menu-button {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="flex flex-col bg-white min-h-[screen]">
+    <!-- HEADER -->
+    <div class="flex justify-between items-center px-11 py-8 max-sm:px-5">
+      <div class="text-xl font-bold text-black">HUSNUL PUTRI</div>
+      <div class="flex items-center gap-11">
+        <!-- Desktop Menu -->
+        <div class="desktop-menu flex gap-11">
+          <a href="aboutme.html" class="text-sm font-bold tracking-tight">about</a>
+          <a href="aboutme.html" class="text-sm font-bold tracking-tight">portfolio</a>
+          <a href="blog.html" class="text-sm font-bold tracking-tight">blog</a>
+          <a href="contact.html" class="text-sm font-bold tracking-tight">contact</a>
+        </div>
+        <!-- Menu Button for Mobile -->
+        <button class="menu-button" id="menu-toggle">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="aboutme.html" class="text-sm font-bold text-black">about</a>
+      <a href="aboutme.html" class="text-sm font-bold text-black">portfolio</a>
+      <a href="blog.html" class="text-sm font-bold text-black">blog</a>
+      <a href="contact.html" class="text-sm font-bold text-black">contact</a>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="flex flex-col items-center px-11 max-sm:px-5">
+      <div class="w-full max-w-[1354px]">
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/efa4afbd761c198183a2a73ad46a66635a7b0c4d" alt="Skincare products" class="w-full h-auto mb-[25px]" />
+        <div class="mb-5 text-4xl font-bold text-black">
+          Discover the Best Skincare Products for a Healthier, Glowing Complexion
+        </div>
+        <div class="mb-12 text-4xl tracking-tight leading-10 text-black">
+          Skincare has been a journey for me full of trials, discoveries, and lessons.
+          Over time, I've learned that great skin isn't about expensive products or
+          trends but about understanding what works for me.
+        </div>
+        <div class="mb-12 text-4xl tracking-tight leading-10 text-black">
+          Every morning, I start with a gentle cleanser to refresh my skin. Then, I
+          use a light, alcohol-free toner to prep my face. My favorite step is applying
+          a vitamin C serum, which brightens my skin and gives it a healthy glow. Next
+          comes moisturizer light but hydrating to keep my skin soft. And I never skip
+          sunscreen. It's the best defense against aging and dark spots.
+        </div>
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/bd577ba76f8c688504a89f03126a3dd0e2ac1bad" alt="Skincare routine items" class="w-full h-auto mb-[25px]" />
+        <div class="mb-5 text-4xl font-bold text-black">
+          My Top Skincare Product Recommendations:
+        </div>
+        <div class="flex flex-col gap-8 text-4xl tracking-tight leading-10 text-black">
+          <div>
+            <span class="font-bold">1. Tatcha The Dewy Skin Cream</span><br/>
+            <span>A rich moisturizer that deeply hydrates and gives your skin a healthy, dewy glow. Perfect for dry skin types, it contains nourishing ingredients like Japanese purple rice and hyaluronic acid.</span>
+          </div>
+          <div>
+            <span class="font-bold">2. Drunk Elephant Protini</span><br/>
+            <span>A peptide-packed moisturizer that helps to firm, hydrate, and improve the texture of your skin. It's perfect for anyone looking to combat fine lines and maintain skin elasticity.</span>
+          </div>
+          <div>
+            <span class="font-bold">3. Estée Lauder Advanced Night Repair</span><br/>
+            <span>A cult favorite serum designed to repair your skin overnight, helping to reduce fine lines, wrinkles, and uneven skin tone for a smoother, refreshed complexion by morning.</span>
+          </div>
+          <div>
+            <span class="font-bold">4. CeraVe Hydrating Cleanser</span><br/>
+            <span>A gentle, non-foaming cleanser that's perfect for sensitive skin. It helps to remove dirt and makeup while retaining your skin's natural moisture balance, making it ideal for dry to normal skin.</span>
+          </div>
+          <div>
+            <span class="font-bold">5. La Roche-Posay SPF 60</span><br/>
+            <span>A lightweight, broad-spectrum sunscreen that provides high-level protection without the greasy feel. It's perfect for everyday use under makeup or on its own for sun protection.</span>
+          </div>
+          <div>
+            <span class="font-bold">6. The Ordinary Niacinamide</span><br/>
+            <span>A targeted serum for controlling excess oil and minimizing the appearance of pores.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="px-11 py-10 mt-24 bg-zinc-300 max-sm:px-5">
+      <div class="flex justify-between max-md:flex-col max-md:gap-10">
+        <div class="pb-5 text-2xl font-bold text-black">
+          © 2025 Husnul Putri. All Rights Reserved.
+        </div>
+        <div class="flex gap-24 max-sm:flex-col max-sm:gap-10">
+          <div class="flex flex-col">
+            <div class="mb-2.5 text-2xl font-bold text-black">Support</div>
+            <div class="flex flex-col gap-2.5 text-2xl text-black">
+              <div>Help Center</div>
+              <div>Terms of Service</div>
+              <div>Privacy Policy</div>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <div class="mb-2.5 text-2xl font-bold text-black">Connect with Us</div>
+            <div class="flex flex-col gap-2.5 text-2xl text-black">
+              <div>Instagram</div>
+              <div>LinkedIn</div>
+              <div>YouTube</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPT: Toggle mobile menu -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

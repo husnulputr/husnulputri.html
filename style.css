@@ -1,0 +1,148 @@
+/* ===================== HOME PAGE ===================== */
+.text-2xl.font-bold.tracking-tight:hover {
+    color: #1f2937; /* Tailwind slate-800 */
+    transform: scale(1.02);
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .text-sm.font-bold.tracking-tight:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  img:hover {
+    transform: scale(1.01);
+    transition: transform 0.3s ease;
+  }
+  
+  /* ===================== ABOUT ME PAGE ===================== */
+  .flex.gap-20.items-center:hover {
+    background-color: #f9fafb; /* soft background on hover */
+    transition: background-color 0.3s ease;
+  }
+  
+  article p::first-letter {
+    font-size: 120%;
+    font-weight: bold;
+  }
+  
+  img:hover {
+    opacity: 0.95;
+    transition: opacity 0.3s;
+  }
+  
+  /* ===================== BLOG PAGE ===================== */
+  .flex.justify-between.items-center.py-5:hover {
+    background-color: #f3f4f6;
+    transition: background-color 0.3s ease;
+  }
+  
+  .text-sm.font-bold.text-black:hover {
+    color: #6b7280; /* Tailwind gray-500 */
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  /* ===================== BLOG POST PAGE ===================== */
+  img:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .flex.flex-col.gap-8.text-4xl span:hover {
+    background: linear-gradient(to right, #facc15, #f97316);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background 0.5s;
+  }
+  
+  /* ===================== CONTACT PAGE ===================== */
+  a[href^="#"]:hover {
+    color: #10b981; /* Tailwind emerald-500 */
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+  
+  footer img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+  }
+  
+  /* ===================== GENERAL ===================== */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  button:hover, .cursor-pointer:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+  }
+  
+  /* Responsive menu toggle (if implemented manually) */
+  .menu-button {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .menu-button:hover {
+    transform: rotate(5deg);
+  }
+  
+  .mobile-menu.active {
+    animation: fadeIn 0.4s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+
+
+/* === INTERAKTIF TANPA MENGUBAH DESAIN === */
+
+/* Navigasi teks */
+nav a:hover,
+.text-sm.font-bold:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Gambar hover */
+img:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+/* Heading scaling */
+.text-2xl.font-bold:hover,
+.text-3xl.font-bold:hover,
+.text-4xl.font-bold:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+/* Tombol/menu */
+button:hover,
+.menu-button:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+
+/* Link hover */
+a:hover {
+  color: #0f766e; /* Tailwind emerald-700 */
+  transition: color 0.3s ease;
+}
+
+/* Footer icon hover */
+footer img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
