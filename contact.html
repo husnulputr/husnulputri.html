@@ -1,100 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Input Design</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Input Design</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="flex flex-col bg-white min-h-[screen]">
-        <header class="flex justify-between items-center px-20 py-11 max-md:px-10 max-sm:px-5">
-            <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/f094ff916795e8636b8128f51729448f2e7f24de"
-                alt="Logo"
-                class="w-[172px] h-[115px] max-sm:w-[120px] max-sm:h-[80px]"
-            />
-            <div class="flex justify-between items-center py-6">
-                    <div class="flex gap-11 max-md:hidden">
-                        <a href="aboutme.html" class="text-sm font-bold tracking-tight">about</a>
-                        <a href="aboutme.html" class="text-sm font-bold tracking-tight">portfolio</a>
-                        <a href="blog.html" class="text-sm font-bold tracking-tight">blog</a>
-                        <a href="contact.html" class="text-sm font-bold tracking-tight">contact</a>
-                    <div class="hidden max-md:block cursor-pointer" id="menu-toggle">
-                        <i class="ti ti-menu-2 text-2xl"></i>
-                    </div>
-                </nav>
-            <button class="hidden max-sm:block">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M4 6h16"></path>
-                    <path d="M4 12h16"></path>
-                    <path d="M4 18h16"></path>
-                </svg>
+  <div class="flex flex-col bg-white min-h-[screen]">
+    <header class="flex justify-between items-center px-20 py-11 max-md:px-10 max-sm:px-5">
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/f094ff916795e8636b8128f51729448f2e7f24de"
+           alt="Logo"
+           class="w-[172px] h-[115px] max-sm:w-[120px] max-sm:h-[80px]" />
+      <div class="flex justify-between items-center py-6">
+        <div class="flex gap-11 max-md:hidden">
+          <a href="homepage.html" class="text-sm font-bold tracking-tight">HOME</a>
+          <a href="aboutme.html" class="text-sm font-bold tracking-tight">PORTOFOLIO</a>
+          <a href="blog.html" class="text-sm font-bold tracking-tight">BLOG</a>
+          <a href="contact.html" class="text-sm font-bold tracking-tight">CONTACT</a>
+        </div>
+        <div class="hidden max-md:block cursor-pointer" id="menu-toggle">
+          <i class="ti ti-menu-2 text-2xl"></i>
+        </div>
+      </div>
+      <button class="hidden max-sm:block">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-[24px] h-[24px]" viewBox="0 0 24 24"
+             stroke-width="2" stroke="currentColor" fill="none">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M4 6h16"></path>
+          <path d="M4 12h16"></path>
+          <path d="M4 18h16"></path>
+        </svg>
+      </button>
+    </header>
+
+    <main class="flex flex-col items-center px-10 max-sm:px-5">
+      <div class="flex flex-col gap-8 items-center w-full max-w-[1200px] max-md:flex-col">
+        <section class="flex flex-col items-center">
+          <h1 class="flex flex-col items-center">
+            <span class="flex gap-3 items-center">
+              <span class="text-7xl font-bold tracking-tighter text-black max-md:text-6xl max-sm:text-4xl">HAVE</span>
+              <span class="text-7xl tracking-tighter text-black max-md:text-6xl max-sm:text-5xl">an</span>
+            </span>
+            <span class="text-7xl font-bold tracking-tighter text-center text-black max-md:text-6xl max-sm:text-4xl">INQUIRY??</span>
+          </h1>
+        </section>
+
+        <!-- GAMBAR & FORM SEJAJAR -->
+        <section class="flex gap-16 max-md:flex-col max-md:items-center">
+          <!-- Gambar -->
+          <figure class="h-[569px] w-[569px] max-md:h-[400px] max-md:w-[400px] max-sm:w-full max-sm:h-auto">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/1c39d424e1a07f009259d24fa1fe7b718498d8cd"
+                 alt="Contact"
+                 class="w-full h-full object-contain" />
+          </figure>
+
+          <!-- Form -->
+          <form class="w-full max-w-xl space-y-5 reveal">
+            <input type="text" placeholder="Your Name"
+                   class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-400 transition" required />
+            <input type="email" placeholder="Your Email"
+                   class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-400 transition" required />
+            <textarea placeholder="Your Message" rows="5"
+                      class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-400 transition" required></textarea>
+            <button type="submit"
+                    class="px-6 py-3 bg-black text-white rounded-md hover:bg-gray-800 transition">
+              Send Feedback
             </button>
-        </header>
+          </form>
+        </section>
+      </div>
+    </main>
 
-        <main class="flex flex-col items-center px-10 max-sm:px-5">
-            <div class="flex flex-col gap-8 items-center w-full max-w-[1200px] max-md:flex-col">
-                <section class="flex flex-col items-center">
-                    <h1 class="flex flex-col items-center">
-                        <span class="flex gap-3 items-center">
-                            <span class="text-7xl font-bold tracking-tighter text-black max-md:text-6xl max-sm:text-4xl">HAVE</span>
-                            <span class="text-7xl tracking-tighter text-black max-md:text-6xl max-sm:text-5xl">an</span>
-                        </span>
-                        <span class="text-7xl font-bold tracking-tighter text-center text-black max-md:text-6xl max-sm:text-4xl">INQUIRY??</span>
-                    </h1>
-                </section>
-
-                <section class="flex gap-16 max-md:flex-col max-md:items-center">
-                    <figure class="h-[569px] w-[569px] max-md:h-[400px] max-md:w-[400px] max-sm:w-full max-sm:h-auto">
-                        <img
-                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/1c39d424e1a07f009259d24fa1fe7b718498d8cd"
-                            alt="Contact"
-                            class="w-full h-full object-contain"
-                        />
-                    </figure>
-                    <figure class="h-[559px] w-[559px] max-md:h-[400px] max-md:w-[400px] max-sm:w-full max-sm:h-auto">
-                        <img
-                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/e9516b076b570c21e33902d14e686b141758c828"
-                            alt="Contact Form"
-                            class="w-full h-full object-contain"
-                        />
-                    </figure>
-                </section>
+    <footer class="px-8 py-10 mt-auto bg-zinc-300 max-sm:px-5">
+      <div class="flex justify-between max-md:flex-col max-md:gap-8">
+        <p class="text-2xl font-bold tracking-tight text-black">
+          © 2025 Husnul Putri. All Rights Reserved.
+        </p>
+        <div class="flex gap-16 max-sm:flex-col max-sm:gap-5">
+          <nav class="flex flex-col">
+            <h2 class="text-2xl font-bold tracking-tight text-black">Support</h2>
+            <a href="#help" class="text-2xl tracking-tight text-black">Help Center</a>
+            <a href="#terms" class="text-2xl tracking-tight text-black">Terms of Service</a>
+            <a href="#privacy" class="text-2xl tracking-tight text-black">Privacy Policy</a>
+          </nav>
+          <div class="flex flex-col">
+            <h2 class="text-2xl font-bold tracking-tight text-black">Connect with Us</h2>
+            <div class="flex gap-4 mt-2.5">
+              <a href="#instagram" aria-label="Visit our Instagram page">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/51da334a3cf364313a2947fcec722bfed35933e4" alt="Instagram" class="w-[52px] h-[54px]" />
+              </a>
+              <a href="#linkedin" aria-label="Visit our LinkedIn page">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/979b05d725de5c688e3e5f0515bbd61217388f37" alt="LinkedIn" class="w-[51px] h-[54px]" />
+              </a>
+              <a href="#youtube" aria-label="Visit our YouTube page">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/b0ac659625e2fa47e5d254917be3ffff1a0bf503" alt="YouTube" class="w-[52px] h-[54px]" />
+              </a>
             </div>
-        </main>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
 
-        <footer class="px-8 py-10 mt-auto bg-zinc-300 max-sm:px-5">
-            <div class="flex justify-between max-md:flex-col max-md:gap-8">
-                <p class="text-2xl font-bold tracking-tight text-black">
-                    © 2025 Husnul Putri. All Rights Reserved.
-                </p>
-                <div class="flex gap-16 max-sm:flex-col max-sm:gap-5">
-                    <nav class="flex flex-col">
-                        <h2 class="text-2xl font-bold tracking-tight text-black">Support</h2>
-                        <a href="#help" class="text-2xl tracking-tight text-black">Help Center</a>
-                        <a href="#terms" class="text-2xl tracking-tight text-black">Terms of Service</a>
-                        <a href="#privacy" class="text-2xl tracking-tight text-black">Privacy Policy</a>
-                    </nav>
-                    <div class="flex flex-col">
-                        <h2 class="text-2xl font-bold tracking-tight text-black">Connect with Us</h2>
-                        <div class="flex gap-4 mt-2.5">
-                            <a href="#instagram" aria-label="Visit our Instagram page">
-                                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/51da334a3cf364313a2947fcec722bfed35933e4" alt="Instagram" class="w-[52px] h-[54px]" />
-                            </a>
-                            <a href="#linkedin" aria-label="Visit our LinkedIn page">
-                                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/979b05d725de5c688e3e5f0515bbd61217388f37" alt="LinkedIn" class="w-[51px] h-[54px]" />
-                            </a>
-                            <a href="#youtube" aria-label="Visit our YouTube page">
-                                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/b0ac659625e2fa47e5d254917be3ffff1a0bf503" alt="YouTube" class="w-[52px] h-[54px]" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
+  <!-- JS Interaktif -->
+  <script src="script.js"></script>
 </body>
 </html>
