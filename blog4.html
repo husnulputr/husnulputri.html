@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Ultimate Guide to Healthy, Radiant Skin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Archivo', sans-serif;
+    }
+
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: white;
+      z-index: 50;
+      padding: 5rem 1.25rem;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .mobile-menu.active {
+      display: flex;
+    }
+
+    @media (max-width: 768px) {
+      .menu-button {
+        display: block;
+      }
+
+      .desktop-menu {
+        display: none;
+      }
+    }
+
+    @media (min-width: 769px) {
+      .menu-button {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="flex flex-col bg-white min-h-[screen]">
+    <!-- HEADER -->
+    <div class="flex justify-between items-center px-11 py-8 max-sm:px-5">
+      <div class="text-xl font-bold text-black">HUSNUL PUTRI</div>
+      <div class="flex items-center gap-11">
+        <!-- Desktop Menu -->
+        <div class="desktop-menu flex gap-11">
+          <a href="homepage.html" class="text-sm font-bold tracking-tight">HOME</a>
+          <a href="aboutme.html" class="text-sm font-bold tracking-tight">PORTOFOLIO</a>
+          <a href="blog.html" class="text-sm font-bold tracking-tight">BLOG</a>
+          <a href="contact.html" class="text-sm font-bold tracking-tight">CONTACT</a>
+        </div>
+        <!-- Menu Button for Mobile -->
+        <button class="menu-button" id="menu-toggle">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="aboutme.html" class="text-sm font-bold text-black">about</a>
+      <a href="aboutme.html" class="text-sm font-bold text-black">portfolio</a>
+      <a href="blog.html" class="text-sm font-bold text-black">blog</a>
+      <a href="contact.html" class="text-sm font-bold text-black">contact</a>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="flex flex-col items-center px-11 max-sm:px-5">
+      <div class="w-full max-w-[1354px]">
+        <div class="mb-5 text-4xl font-bold text-black">
+          Your Ultimate Guide to Healthy, Radiant Skin: Science-Backed Tips for Every Age
+        </div>
+        <div class="mb-12 text-4xl tracking-tight leading-10 text-black">
+          Achieving healthy, radiant skin isn't about perfection—it's about consistency, 
+          understanding your skin's unique needs, and embracing the journey. Through years 
+          of research and personal experience, I've learned that great skin comes from both 
+          inside and outside care.
+        </div>
+        <div class="mb-12 text-4xl tracking-tight leading-10 text-black">
+          The foundation of radiant skin begins with understanding that skincare is healthcare. 
+          Your skin is your body's largest organ, and it deserves the same attention and care 
+          as your overall wellness. This comprehensive guide will help you build a routine 
+          that works for your lifestyle and delivers lasting results.
+        </div>
+        <div class="mb-5 text-4xl font-bold text-black">
+          Essential Steps to Healthy, Radiant Skin:
+        </div>
+        <div class="flex flex-col gap-8 text-4xl tracking-tight leading-10 text-black">
+          <div>
+            <span class="font-bold">1. Double Cleansing Method</span><br/>
+            <span>Start with an oil-based cleanser to remove makeup and sunscreen, followed by a water-based cleanser for your skin type. This ensures deep cleansing without stripping your skin's natural oils.</span>
+          </div>
+          <div>
+            <span class="font-bold">2. Hydration Inside and Out</span><br/>
+            <span>Drink plenty of water throughout the day and use hyaluronic acid serums to lock in moisture. Well-hydrated skin appears plumper, smoother, and naturally radiant.</span>
+          </div>
+          <div>
+            <span class="font-bold">3. Sun Protection Daily</span><br/>
+            <span>Use broad-spectrum SPF 30 or higher every single day, even indoors. UV protection is the single most important step in preventing premature aging and maintaining healthy skin.</span>
+          </div>
+          <div>
+            <span class="font-bold">4. Regular Exfoliation</span><br/>
+            <span>Incorporate gentle chemical exfoliants like AHA or BHA 2-3 times per week to remove dead skin cells and reveal fresh, glowing skin underneath. Always follow with moisturizer and sunscreen.</span>
+          </div>
+          <div>
+            <span class="font-bold">5. Antioxidant Protection</span><br/>
+            <span>Use vitamin C serum in the morning to protect against environmental damage and brighten your complexion. Look for stable forms like L-ascorbic acid or magnesium ascorbyl phosphate.</span>
+          </div>
+          <div>
+            <span class="font-bold">6. Quality Sleep and Stress Management</span><br/>
+            <span>Aim for 7-9 hours of quality sleep and practice stress-reduction techniques. Your skin repairs itself during sleep, and chronic stress can trigger breakouts and accelerate aging.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="py-10 w-full bg-zinc-300">
+      <div class="px-9 mx-auto max-w-[1440px] max-md:px-6 max-sm:px-4">
+        <div class="flex gap-10 justify-between max-md:flex-col">
+          <div class="text-2xl font-bold tracking-tight">
+            © 2025 Husnul Putri. All Rights Reserved.
+          </div>
+          <div class="flex gap-10 max-sm:flex-col">
+            <div class="flex flex-col">
+              <div class="text-2xl font-bold tracking-tight">Support</div>
+              <a href="#help" class="text-2xl tracking-tight">Help Center</a>
+              <a href="#terms" class="text-2xl tracking-tight">Terms of Service</a>
+              <a href="#privacy" class="text-2xl tracking-tight">Privacy Policy</a>
+            </div>
+            <div class="flex flex-col">
+              <div class="text-2xl font-bold tracking-tight">Connect with Us</div>
+              <a href="https://instagram.com/hsnlptr" target="_blank" class="text-2xl tracking-tight social-link">Instagram</a>
+              <a href="https://linkedin.com/" target="_blank" class="text-2xl tracking-tight social-link">LinkedIn</a>
+              <a href="https://youtube.com/@husnulputri" target="_blank" class="text-2xl tracking-tight social-link">YouTube</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPT: Toggle mobile menu -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

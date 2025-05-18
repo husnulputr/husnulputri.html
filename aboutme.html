@@ -5,61 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <script src="https://cdn.tailwindcss.com"></script>
-]
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,700;1,400&family=Caladea:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css">
+    <style>
+        /* Custom CSS for better text formatting */
+        .text-left-align {
+            text-align: left;
+        }
+        .portfolio-frame {
+            border: 3px solid #f4f4f5;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 16px;
+            background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+        }
+        .portfolio-frame img {
+            border-radius: 4px;
+            width: 100%;
+            height: auto;
+        }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        @media (max-width: 768px) {
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+        .social-link {
+            transition: all 0.3s ease;
+        }
+        .social-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        .section-spacing {
+            margin-top: 96px;
+        }
+        @media (max-width: 768px) {
+            .section-spacing {
+                margin-top: 64px;
+            }
+        }
+        @media (max-width: 640px) {
+            .section-spacing {
+                margin-top: 48px;
+            }
+        }
+    </style>
 </head>
 <body>
-     <header class="flex justify-between items-center px-20 py-11 max-md:px-10 max-sm:px-5">
-            <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/f094ff916795e8636b8128f51729448f2e7f24de"
-                alt="Logo"
-                class="w-[172px] h-[115px] max-sm:w-[120px] max-sm:h-[80px]"
-            />
-            <div class="flex justify-between items-center py-6">
-                    <div class="flex gap-11 max-md:hidden">
-                        <a href="homepage.html" class="text-sm font-bold tracking-tight">HOME</a>
-                        <a href="aboutme.html" class="text-sm font-bold tracking-tight">PORTOFOLIO</a>
-                        <a href="blog.html" class="text-sm font-bold tracking-tight">BLOG</a>
-                        <a href="contact.html" class="text-sm font-bold tracking-tight">CONTACT</a>
-                    <div class="hidden max-md:block cursor-pointer" id="menu-toggle">
-                        <i class="ti ti-menu-2 text-2xl"></i>
-                    </div>
-        </header>
+    <header class="flex justify-between items-center px-20 py-11 max-md:px-10 max-sm:px-5">
+        <img
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/f094ff916795e8636b8128f51729448f2e7f24de"
+            alt="Logo"
+            class="w-[172px] h-[115px] max-sm:w-[120px] max-sm:h-[80px]"
+        />
+        <div class="flex justify-between items-center py-6">
+            <div class="flex gap-11 max-md:hidden">
+                <a href="homepage.html" class="text-sm font-bold tracking-tight">HOME</a>
+                <a href="aboutme.html" class="text-sm font-bold tracking-tight">PORTOFOLIO</a>
+                <a href="blog.html" class="text-sm font-bold tracking-tight">BLOG</a>
+                <a href="contact.html" class="text-sm font-bold tracking-tight">CONTACT</a>
+            </div>
+            <div class="hidden max-md:block cursor-pointer" id="menu-toggle">
+                <i class="ti ti-menu-2 text-2xl"></i>
+            </div>
+        </div>
+    </header>
 
-        <main class="flex flex-col px-24 max-md:px-12 max-sm:px-5">
-            <section class="flex gap-20 items-center max-md:flex-col">
-                <article class="flex-1">
-                    <p class="mb-5 text-2xl tracking-tight leading-7">
-                        Husnul Khatimah Putri Irwan Intje Digital Business Student |
-                        UI/UX &amp; Digital Marketing Enthusiast Location: Makassar,
-                        Indonesia | Age: 19 A highly motivated Digital Business student
-                        with strong proficiency in digital marketing and UI/UX design.
-                        Passionate about personal branding and currently developing a
-                        professional portfolio website to showcase creative projects and
-                        attract potential recruiters and freelance clients.
-                    </p>
-                    <p class="text-2xl tracking-tight leading-7">
-                        Additionally managing an entertainment and beauty blog focused
-                        on makeup reviews, skincare insights, and fashion trends, while
-                        also serving as a platform to share knowledge and perspectives
-                        on the digital industry. Adept at combining creativity with
-                        strategy to engage audiences and create impactful digital
-                        experiences.
-                    </p>
-                </article>
-                <div class="w-[455px] max-md:w-full max-sm:w-full">
-                    <img src="https://cdn.builder.io/api/v1/image/assets%2F82e0fb8a913b4795b1fa197624332172%2Fa0577fd9eb5142d6be2705521d9f14ea" alt="Profile" class="w-full h-auto">
-                </div>
-            </section>
+    <main class="flex flex-col px-24 max-md:px-12 max-sm:px-5">
+        <section class="flex gap-20 items-center max-md:flex-col">
+            <article class="flex-1 text-left-align">
+                <p class="mb-5 text-2xl tracking-tight leading-8">
+                    Husnul Khatimah Putri Irwan Intje Digital Business Student |
+                    UI/UX & Digital Marketing Enthusiast Location: Makassar,
+                    Indonesia | Age: 19 A highly motivated Digital Business student
+                    with strong proficiency in digital marketing and UI/UX design.
+                    Passionate about personal branding and currently developing a
+                    professional portfolio website to showcase creative projects and
+                    attract potential recruiters and freelance clients.
+                </p>
+                <p class="text-2xl tracking-tight leading-8">
+                    Additionally managing an entertainment and beauty blog focused
+                    on makeup reviews, skincare insights, and fashion trends, while
+                    also serving as a platform to share knowledge and perspectives
+                    on the digital industry. Adept at combining creativity with
+                    strategy to engage audiences and create impactful digital
+                    experiences.
+                </p>
+            </article>
+            <div class="w-[455px] max-md:w-full max-sm:w-full">
+                <img src="https://cdn.builder.io/api/v1/image/assets%2F82e0fb8a913b4795b1fa197624332172%2Fa0577fd9eb5142d6be2705521d9f14ea" alt="Profile" class="w-full h-auto">
+            </div>
+        </section>
 
-            <section class="flex flex-col mt-24 max-md:mt-16 max-sm:mt-10">
-                <header class="flex gap-8 items-baseline mb-12">
-                    <h2 class="my-auto text-7xl font-bold tracking-tighter uppercase">HOW IT</h2>
-                    <span class="my-auto text-7xl tracking-tighter lowercase">all</span>
-                    <span class="my-auto text-7xl font-bold tracking-tighter uppercase">STARTED</span>
-                </header>
-                <article class="ml-auto text-2xl tracking-tight leading-9 max-w-[575px]">
+        <section class="flex flex-col section-spacing">
+            <header class="flex gap-8 items-baseline mb-12">
+                <h2 class="my-auto text-7xl font-bold tracking-tighter uppercase">HOW IT</h2>
+                <span class="my-auto text-7xl tracking-tighter lowercase">all</span>
+                <span class="my-auto text-7xl font-bold tracking-tighter uppercase">STARTED</span>
+            </header>
+            <div class="flex gap-16 max-md:flex-col max-md:gap-8">
+                <article class="flex-1 text-2xl tracking-tight leading-8 text-left-align">
                     <p>
                         Driven by curiosity about how businesses grow in the digital age,
                         I pursued Digital Business at Makassar State University, where I
@@ -76,70 +127,84 @@
                         passionate about business and technology.
                     </p>
                 </article>
-            </section>
-
-            <section class="mt-24 max-md:mt-16 max-sm:mt-10">
-                <header class="mb-12 text-center">
-                    <h2 class="inline-flex text-7xl font-bold tracking-tighter uppercase">
-                        <span>PORTFOLIO</span>
-                        <span class="text-7xl tracking-wider lowercase">
-                            <em>&nbsp;<span style="font-weight: 100;">SHOWCASE</span></em>
-                        </span>
-                    </h2>
-                    <div class="text-7xl font-bold tracking-tighter uppercase">
-                        DESIGN PROJECT
-                    </div>
-                </header>
-                <p class="mx-auto -mt-px text-2xl tracking-tight leading-7 text-center max-w-[735px]">
-                    I have a growing skill set in UI/UX design and digital marketing,
-                    using Figma to create intuitive user interfaces, Canva for
-                    branding and marketing materials, and various editing tools to
-                    enhance visuals. I also work on website design, pitch deck
-                    development, and product marketing editing, ensuring that digital
-                    platforms, presentations, and promotional content are visually
-                    compelling and strategically structured. While I'm still learning
-                    and improving, I enjoy exploring creative solutions and refining
-                    my skills to create designs that are engaging, effective, and
-                    impactful.
-                </p>
-                <div class="flex flex-col gap-8 mt-12">
-                    <img src="https://cdn.builder.io/api/v1/image/assets%2F82e0fb8a913b4795b1fa197624332172%2F6804ad1660664dc7a896efa943b6619d" alt="Portfolio 1" class="w-full">
-                    <img src="https://cdn.builder.io/api/v1/image/assets%2F82e0fb8a913b4795b1fa197624332172%2F5fac2f232e594d77a22315c495c5eb39" alt="Portfolio 2" class="w-full">
-                    <img src="https://cdn.builder.io/api/v1/image/assets%2F82e0fb8a913b4795b1fa197624332172%2F7bd625b856b242cba4a2c259a037eeda" alt="Portfolio 3" class="w-full">
-                    <img src="https://cdn.builder.io/api/v1/image/assets%2F82e0fb8a913b4795b1fa197624332172%2F7ed78ff0b947468482314e73d1995a1b" alt="Portfolio 4" class="w-full">
-                    <img src="https://cdn.builder.io/api/v1/image/assets%2F82e0fb8a913b4795b1fa197624332172%2F952d1cc46f6b4e6b8e67d5c1bc4e788a" alt="Portfolio 5" class="w-full">
-                    <img src="https://cdn.builder.io/api/v1/image/assets%2F82e0fb8a913b4795b1fa197624332172%2Fe3af121dac194da390ef8a80b7b33232" alt="Portfolio 6" class="w-full">
-                    <img src="https://cdn.builder.io/api/v1/image/assets%2F82e0fb8a913b4795b1fa197624332172%2F2e4815e959f04eb097172cbd7805d8c1" alt="Portfolio 7" class="w-full">
-                </div>
-            </section>
-        </main>
-
-        <footer class="px-24 py-12 mt-24 -mr-px bg-zinc-300 max-md:px-12 max-sm:px-5">
-            <div class="flex justify-between max-md:flex-col max-md:gap-8">
-                <p class="text-2xl font-bold tracking-tight">
-                    © 2025 Husnul Putri. All Rights Reserved.
-                </p>
-                <div class="flex gap-12 max-sm:flex-col">
-                    <nav class="text-2xl tracking-tight">
-                        <h3 class="font-bold">Support</h3>
-                        <ul>
-                            <li>Help Center</li>
-                            <li>Terms of Service</li>
-                            <li>Privacy Policy</li>
-                        </ul>
-                    </nav>
-                    <nav class="text-2xl tracking-tight">
-                        <h3 class="font-bold">Connect with Us</h3>
-                        <ul>
-                            <li>Instagram</li>
-                            <li>LinkedIn</li>
-                            <li>YouTube</li>
-                        </ul>
-                    </nav>
+                <div class="w-[400px] max-md:w-full">
+                    <img src="img/shape.jpg" alt="Shape" class="w-full h-auto rounded-lg shadow-lg">
                 </div>
             </div>
-        </footer>
-    </div>
+        </section>
+
+        <section class="section-spacing">
+            <header class="mb-12 text-center">
+                <h2 class="inline-flex text-7xl font-bold tracking-tighter uppercase">
+                    <span>PORTFOLIO</span>
+                    <span class="text-7xl tracking-wider lowercase">
+                        <em>&nbsp;<span style="font-weight: 100;">SHOWCASE</span></em>
+                    </span>
+                </h2>
+                <div class="text-7xl font-bold tracking-tighter uppercase">
+                    DESIGN PROJECT
+                </div>
+            </header>
+            <p class="mx-auto -mt-px text-2xl tracking-tight leading-8 text-left-align max-w-[735px] text-left-align">
+                I have a growing skill set in UI/UX design and digital marketing,
+                using Figma to create intuitive user interfaces, Canva for
+                branding and marketing materials, and various editing tools to
+                enhance visuals. I also work on website design, pitch deck
+                development, and product marketing editing, ensuring that digital
+                platforms, presentations, and promotional content are visually
+                compelling and strategically structured. While I'm still learning
+                and improving, I enjoy exploring creative solutions and refining
+                my skills to create designs that are engaging, effective, and
+                impactful.
+            </p>
+            <div class="portfolio-grid mt-12">
+                <div class="portfolio-frame">
+                    <img src="https://cdn.builder.io/api/v1/image/assets%2F82e0fb8a913b4795b1fa197624332172%2F6804ad1660664dc7a896efa943b6619d" alt="Portfolio 1" class="w-full">
+                </div>
+                <div class="portfolio-frame">
+                    <img src="https://cdn.builder.io/api/v1/image/assets%2F82e0fb8a913b4795b1fa197624332172%2F5fac2f232e594d77a22315c495c5eb39" alt="Portfolio 2" class="w-full">
+                </div>
+                <div class="portfolio-frame">
+                    <img src="https://cdn.builder.io/api/v1/image/assets%2F82e0fb8a913b4795b1fa197624332172%2F7bd625b856b242cba4a2c259a037eeda" alt="Portfolio 3" class="w-full">
+                </div>
+                <div class="portfolio-frame">
+                    <img src="https://cdn.builder.io/api/v1/image/assets%2F82e0fb8a913b4795b1fa197624332172%2F7ed78ff0b947468482314e73d1995a1b" alt="Portfolio 4" class="w-full">
+                </div>
+                <div class="portfolio-frame">
+                    <img src="https://cdn.builder.io/api/v1/image/assets%2F82e0fb8a913b4795b1fa197624332172%2F952d1cc46f6b4e6b8e67d5c1bc4e788a" alt="Portfolio 5" class="w-full">
+                </div>
+                <div class="portfolio-frame">
+                    <img src="https://cdn.builder.io/api/v1/image/assets%2F82e0fb8a913b4795b1fa197624332172%2Fe3af121dac194da390ef8a80b7b33232" alt="Portfolio 6" class="w-full">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="section-spacing px-24 py-12 -mr-px bg-zinc-300 max-md:px-12 max-sm:px-5">
+        <div class="flex justify-between max-md:flex-col max-md:gap-8">
+            <p class="text-2xl font-bold tracking-tight">
+                © 2025 Husnul Putri. All Rights Reserved.
+            </p>
+            <div class="flex gap-12 max-sm:flex-col">
+                <nav class="text-2xl tracking-tight">
+                    <h3 class="font-bold">Support</h3>
+                    <ul>
+                        <li><a href="#help">Help Center</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                    </ul>
+                </nav>
+                <nav class="text-2xl tracking-tight">
+                    <h3 class="font-bold">Connect with Us</h3>
+                    <ul>
+                        <li><a href="https://instagram.com/hsnlptr" target="_blank" class="social-link">Instagram</a></li>
+                        <li><a href="https://linkedin.com/" target="_blank" class="social-link">LinkedIn</a></li>
+                        <li><a href="https://youtube.com/@husnulputri" target="_blank" class="social-link">YouTube</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

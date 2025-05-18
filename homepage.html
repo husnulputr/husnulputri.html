@@ -9,126 +9,149 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,700;1,400&family=Caladea:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="stylesheet" href="style.css">
+    <style>
+        .section-spacing {
+            margin-top: 96px;
+        }
+        @media (max-width: 768px) {
+            .section-spacing {
+                margin-top: 64px;
+            }
+        }
+        @media (max-width: 640px) {
+            .section-spacing {
+                margin-top: 48px;
+            }
+        }
+        .text-left-align {
+            text-align: left;
+        }
+        .social-link {
+            transition: all 0.3s ease;
+        }
+        .social-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        .cta-link {
+            display: inline-block;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+        .cta-link:hover {
+            transform: translateX(10px);
+            color: #0f766e;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="w-full bg-white min-h-[screen]">
-         <header class="flex justify-between items-center px-20 py-11 max-md:px-10 max-sm:px-5">
+    <div class="w-full bg-white min-h-screen">
+        <header class="flex justify-between items-center px-20 py-11 max-md:px-10 max-sm:px-5">
             <img
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/f094ff916795e8636b8128f51729448f2e7f24de"
                 alt="Logo"
                 class="w-[172px] h-[115px] max-sm:w-[120px] max-sm:h-[80px]"
             />
             <div class="flex justify-between items-center py-6">
-                    <div class="flex gap-11 max-md:hidden">
-                        <a href="homepage.html" class="text-sm font-bold tracking-tight">HOME</a>
-                        <a href="aboutme.html" class="text-sm font-bold tracking-tight">PORTOFOLIO</a>
-                        <a href="blog.html" class="text-sm font-bold tracking-tight">BLOG</a>
-                        <a href="contact.html" class="text-sm font-bold tracking-tight">CONTACT</a>
-                    <div class="hidden max-md:block cursor-pointer" id="menu-toggle">
-                        <i class="ti ti-menu-2 text-2xl"></i>
-                    </div>
-
-                    </div>
-                    <div class="hidden max-md:block">
-                        <i class="ti ti-menu-2 text-2xl"></i>
-                    </div>
+                <div class="flex gap-11 max-md:hidden">
+                    <a href="homepage.html" class="text-sm font-bold tracking-tight">HOME</a>
+                    <a href="aboutme.html" class="text-sm font-bold tracking-tight">PORTOFOLIO</a>
+                    <a href="blog.html" class="text-sm font-bold tracking-tight">BLOG</a>
+                    <a href="contact.html" class="text-sm font-bold tracking-tight">CONTACT</a>
+                </div>
+                <div class="hidden max-md:block cursor-pointer" id="menu-toggle">
+                    <i class="ti ti-menu-2 text-2xl"></i>
                 </div>
             </div>
+        </header>
 
-            <div class="flex flex-col pr-9 pl-11 w-full max-w-[1512px] max-md:px-6 max-sm:px-4">
-                <div class="flex flex-col gap-6 items-center py-24 mx-auto max-md:py-16 max-sm:py-10">
-                    <div class="flex gap-10 justify-between items-center max-md:flex-col">
-                        <div class="flex flex-col w-full max-w-[697px]"></div>
-                        <div class="flex flex-col w-full max-w-[232px]"></div>
-                    </div>
-                    <div class="mx-auto mb-6 text-3xl font-medium tracking-tight">
-                        Designing Experiences, Creating Impact.
-                    </div>
-                    <div class="text-2xl font-bold tracking-tight">View My Work →</div>
-                    <div class="flex gap-10 justify-between items-center max-md:flex-col">
-                        <div class="w-full max-w-[410px]"></div>
-                    </div>
+        <div class="flex flex-col pr-9 pl-11 w-full max-w-[1512px] max-md:px-6 max-sm:px-4">
+            <div class="flex flex-col gap-6 items-center py-24 mx-auto max-md:py-16 max-sm:py-10">
+                <div class="mx-auto mb-6 text-3xl font-medium tracking-tight text-center">
+                    Designing Experiences, Creating Impact.
                 </div>
+                <a href="aboutme.html" class="cta-link text-2xl font-bold tracking-tight">View My Work →</a>
             </div>
+        </div>
 
-            <div class="w-full bg-white">
-                <div class="px-9 py-24 mx-auto max-w-[1440px] max-md:px-6 max-md:py-16 max-sm:px-4 max-sm:py-10">
-                    <div class="flex flex-col gap-16 items-center">
-                        <div class="flex gap-10 items-center max-md:flex-col">
-                            <div class="w-full max-w-[414px]">
-                                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/4cc2eb9dd1735b549685058113df4ff966588d18" alt="" class="w-full h-[531px] object-cover">
+        <div class="w-full bg-white">
+            <div class="px-9 py-24 mx-auto max-w-[1440px] max-md:px-6 max-md:py-16 max-sm:px-4 max-sm:py-10">
+                <div class="flex flex-col gap-16 items-center">
+                    <div class="flex gap-10 items-center max-md:flex-col">
+                        <div class="w-full max-w-[414px]">
+                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/4cc2eb9dd1735b549685058113df4ff966588d18" alt="" class="w-full h-[531px] object-cover">
+                        </div>
+                        <div class="flex flex-col max-w-[478px] text-left-align">
+                            <div class="mb-6 text-3xl font-medium tracking-tight leading-9">
+                                Hi, I'm Husnul, a passionate Digital Marketer & UI/UX Designer Student dedicated to crafting meaningful digital experiences. Through a blend of aesthetics, functionality, and strategy, I transform ideas into visually compelling and user-centric solutions.
                             </div>
-                            <div class="flex flex-col max-w-[478px]">
-                                <div class="mb-6 text-3xl font-medium tracking-tight">
-                                    Hi, I'm Husnul, a passionate Digital Marketer & UI/UX Designer Student dedicated to crafting meaningful digital experiences. Through a blend of aesthetics, functionality, and strategy, I transform ideas into visually compelling and user-centric solutions.
-                                </div>
-                                <div class="text-sm font-bold tracking-tight">(Find out more about me)</div>
-                            </div>
+                            <a href="aboutme.html" class="cta-link text-sm font-bold tracking-tight">(Find out more about me) →</a>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="px-9 w-full max-w-[1440px] max-md:px-6 max-sm:px-4">
-                <div class="mb-10 text-5xl font-bold tracking-tighter uppercase">CONTENTS</div>
-                <div class="flex flex-col gap-36">
-                    <div class="flex gap-9 justify-between items-center max-md:flex-col">
-                        <div class="w-full max-w-[487px]">
-                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/0351c0f734c79a75b25a942fc5e59c530de8117c" alt="" class="w-full h-[516px] object-cover">
-                        </div>
-                        <div class="text-3xl font-bold tracking-tight">
-                            More Than Just a Blog – It's Your Ultimate Guide
-                        </div>
+        <div class="px-9 w-full max-w-[1440px] max-md:px-6 max-sm:px-4">
+            <div class="mb-10 text-5xl font-bold tracking-tighter uppercase">CONTENTS</div>
+            <div class="flex flex-col gap-36">
+                <div class="flex gap-9 justify-between items-center max-md:flex-col">
+                    <div class="w-full max-w-[487px]">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/0351c0f734c79a75b25a942fc5e59c530de8117c" alt="" class="w-full h-[516px] object-cover">
                     </div>
-                    <div class="flex gap-9 justify-between items-center max-md:flex-col">
-                        <div class="text-3xl font-bold tracking-tight">
-                            From Ideas to Impact – Elevate Your Brand Now!
-                        </div>
-                        <div class="w-full max-w-[487px]">
-                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/1b8b1362143dc437444cf24d0977db617f0edb59" alt="" class="w-full h-[516px] object-cover">
-                        </div>
+                    <div class="text-3xl font-bold tracking-tight">
+                        More Than Just a Blog – It's Your Ultimate Guide
                     </div>
-                    <div class="flex gap-9 justify-between items-center max-md:flex-col">
-                        <div class="w-full max-w-[487px]">
-                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/5c9bedc145b5d47583704df0b25b882dba4fdca8" alt="" class="w-full h-[516px] object-cover">
-                        </div>
-                        <div class="text-3xl font-bold tracking-tight">
-                            Where Creativity Meets Strategy – Explore My Portfolio
-                        </div>
+                </div>
+                <div class="flex gap-9 justify-between items-center max-md:flex-col">
+                    <div class="text-3xl font-bold tracking-tight">
+                        From Ideas to Impact – Elevate Your Brand Now!
+                    </div>
+                    <div class="w-full max-w-[487px]">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/1b8b1362143dc437444cf24d0977db617f0edb59" alt="" class="w-full h-[516px] object-cover">
+                    </div>
+                </div>
+                <div class="flex gap-9 justify-between items-center max-md:flex-col">
+                    <div class="w-full max-w-[487px]">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/5c9bedc145b5d47583704df0b25b882dba4fdca8" alt="" class="w-full h-[516px] object-cover">
+                    </div>
+                    <div class="text-3xl font-bold tracking-tight">
+                        Where Creativity Meets Strategy – Explore My Portfolio
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="px-9 py-24 w-full max-w-[1440px] max-md:px-6 max-md:py-16 max-sm:px-4 max-sm:py-10">
-                <div class="flex flex-col items-center">
-                    <div class="mr-auto mb-6 text-7xl tracking-tighter">Transforming</div>
-                    <div class="mr-auto mb-6 text-7xl font-bold tracking-tighter uppercase">ideas into</div>
-                    <div class="mr-auto mb-6 text-7xl tracking-tighter uppercase">impact</div>
-                    <div class="mr-auto mb-6 text-7xl font-bold tracking-tighter uppercase">A Journey In business &</div>
-                    <div class="mr-auto text-7xl font-bold tracking-tighter uppercase">Digital strategy</div>
-                </div>
+        <div class="section-spacing px-9 py-24 w-full max-w-[1440px] max-md:px-6 max-md:py-16 max-sm:px-4 max-sm:py-10">
+            <div class="flex flex-col items-center">
+                <div class="mr-auto mb-6 text-7xl tracking-tighter">Transforming</div>
+                <div class="mr-auto mb-6 text-7xl font-bold tracking-tighter uppercase">ideas into</div>
+                <div class="mr-auto mb-6 text-7xl tracking-tighter uppercase">impact</div>
+                <div class="mr-auto mb-6 text-7xl font-bold tracking-tighter uppercase">A Journey In business &</div>
+                <div class="mr-auto text-7xl font-bold tracking-tighter uppercase">Digital strategy</div>
             </div>
+        </div>
 
-            <div class="py-10 w-full bg-zinc-300">
-                <div class="px-9 mx-auto max-w-[1440px] max-md:px-6 max-sm:px-4">
-                    <div class="flex gap-10 justify-between max-md:flex-col">
-                        <div class="text-2xl font-bold tracking-tight">
-                            © 2025 Husnul Putri. All Rights Reserved.
+        <div class="py-10 w-full bg-zinc-300">
+            <div class="px-9 mx-auto max-w-[1440px] max-md:px-6 max-sm:px-4">
+                <div class="flex gap-10 justify-between max-md:flex-col">
+                    <div class="text-2xl font-bold tracking-tight">
+                        © 2025 Husnul Putri. All Rights Reserved.
+                    </div>
+                    <div class="flex gap-10 max-sm:flex-col">
+                        <div class="flex flex-col">
+                            <div class="text-2xl font-bold tracking-tight">Support</div>
+                            <a href="#help" class="text-2xl tracking-tight">Help Center</a>
+                            <a href="#terms" class="text-2xl tracking-tight">Terms of Service</a>
+                            <a href="#privacy" class="text-2xl tracking-tight">Privacy Policy</a>
                         </div>
-                        <div class="flex gap-10 max-sm:flex-col">
-                            <div class="flex flex-col">
-                                <div class="text-2xl font-bold tracking-tight">Support</div>
-                                <div class="text-2xl tracking-tight">Help Center</div>
-                                <div class="text-2xl tracking-tight">Terms of Service</div>
-                                <div class="text-2xl tracking-tight">Privacy Policy</div>
-                            </div>
-                            <div class="flex flex-col">
-                                <div class="text-2xl font-bold tracking-tight">Connect with Us</div>
-                                <div class="text-2xl tracking-tight">Instagram</div>
-                                <div class="text-2xl tracking-tight">LinkedIn</div>
-                                <div class="text-2xl tracking-tight">YouTube</div>
-                            </div>
+                        <div class="flex flex-col">
+                            <div class="text-2xl font-bold tracking-tight">Connect with Us</div>
+                            <a href="https://instagram.com/husnulputri" target="_blank" class="text-2xl tracking-tight social-link">Instagram</a>
+                            <a href="https://linkedin.com/in/husnulputri" target="_blank" class="text-2xl tracking-tight social-link">LinkedIn</a>
+                            <a href="https://youtube.com/@husnulputri" target="_blank" class="text-2xl tracking-tight social-link">YouTube</a>
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Effortless Fashion, Timeless Confidence</title>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Archivo', sans-serif;
+    }
+
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: white;
+      z-index: 50;
+      padding: 5rem 1.25rem;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .mobile-menu.active {
+      display: flex;
+    }
+
+    @media (max-width: 768px) {
+      .menu-button {
+        display: block;
+      }
+
+      .desktop-menu {
+        display: none;
+      }
+    }
+
+    @media (min-width: 769px) {
+      .menu-button {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="flex flex-col bg-white min-h-[screen]">
+    <!-- HEADER -->
+    <div class="flex justify-between items-center px-11 py-8 max-sm:px-5">
+      <div class="text-xl font-bold text-black">HUSNUL PUTRI</div>
+      <div class="flex items-center gap-11">
+        <!-- Desktop Menu -->
+        <div class="desktop-menu flex gap-11">
+          <a href="homepage.html" class="text-sm font-bold tracking-tight">HOME</a>
+          <a href="aboutme.html" class="text-sm font-bold tracking-tight">PORTOFOLIO</a>
+          <a href="blog.html" class="text-sm font-bold tracking-tight">BLOG</a>
+          <a href="contact.html" class="text-sm font-bold tracking-tight">CONTACT</a>
+        </div>
+        <!-- Menu Button for Mobile -->
+        <button class="menu-button" id="menu-toggle">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="aboutme.html" class="text-sm font-bold text-black">about</a>
+      <a href="aboutme.html" class="text-sm font-bold text-black">portfolio</a>
+      <a href="blog.html" class="text-sm font-bold text-black">blog</a>
+      <a href="contact.html" class="text-sm font-bold text-black">contact</a>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="flex flex-col items-center px-11 max-sm:px-5">
+      <div class="w-full max-w-[1354px]">
+        <div class="mb-5 text-4xl font-bold text-black">
+          Effortless Fashion, Timeless Confidence: Building a Wardrobe That Works
+        </div>
+        <div class="mb-12 text-4xl tracking-tight leading-10 text-black">
+          True style isn't about following every trend or owning the latest designer pieces. 
+          It's about curating a wardrobe that makes you feel confident, comfortable, and 
+          authentically yourself every single day.
+        </div>
+        <div class="mb-12 text-4xl tracking-tight leading-10 text-black">
+          Over the years, I've discovered that the most stylish women aren't those with 
+          overflowing closets, but those who understand the power of quality basics, 
+          strategic accessories, and knowing what works for their body and lifestyle. 
+          When you dress with intention, confidence naturally follows.
+        </div>
+        <div class="mb-5 text-4xl font-bold text-black">
+          Essential Pieces for Effortless Style:
+        </div>
+        <div class="flex flex-col gap-8 text-4xl tracking-tight leading-10 text-black">
+          <div>
+            <span class="font-bold">1. The Perfect White Button-Down</span><br/>
+            <span>A crisp, well-fitted white shirt is the foundation of any great wardrobe. Whether tucked into tailored trousers for work or tied at the waist with jeans for weekends, it's endlessly versatile.</span>
+          </div>
+          <div>
+            <span class="font-bold">2. Classic Trench Coat</span><br/>
+            <span>A timeless outerwear piece that instantly elevates any outfit. Choose a neutral tone like beige or navy for maximum versatility and look for quality details like proper lining and sturdy hardware.</span>
+          </div>
+          <div>
+            <span class="font-bold">3. Well-Tailored Blazer</span><br/>
+            <span>The ultimate confidence booster. A structured blazer in black, navy, or tweed can transform a simple dress or elevate casual separates for an instantly polished look.</span>
+          </div>
+          <div>
+            <span class="font-bold">4. Quality Leather Handbag</span><br/>
+            <span>Invest in one beautiful leather bag in a classic shape and neutral color. It should work for both day and evening, and with proper care, will last for decades.</span>
+          </div>
+          <div>
+            <span class="font-bold">5. Comfortable Elegant Flats</span><br/>
+            <span>Every woman needs shoes that are both beautiful and comfortable. Classic ballet flats or loafers in leather provide sophistication without sacrificing comfort for long days.</span>
+          </div>
+          <div>
+            <span class="font-bold">6. Little Black Dress</span><br/>
+            <span>The ultimate timeless piece that works for countless occasions. Choose a style that flatters your figure and can be dressed up with jewelry and heels or down with a cardigan and flats.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="py-10 w-full bg-zinc-300">
+      <div class="px-9 mx-auto max-w-[1440px] max-md:px-6 max-sm:px-4">
+        <div class="flex gap-10 justify-between max-md:flex-col">
+          <div class="text-2xl font-bold tracking-tight">
+            © 2025 Husnul Putri. All Rights Reserved.
+          </div>
+          <div class="flex gap-10 max-sm:flex-col">
+            <div class="flex flex-col">
+              <div class="text-2xl font-bold tracking-tight">Support</div>
+              <a href="#help" class="text-2xl tracking-tight">Help Center</a>
+              <a href="#terms" class="text-2xl tracking-tight">Terms of Service</a>
+              <a href="#privacy" class="text-2xl tracking-tight">Privacy Policy</a>
+            </div>
+            <div class="flex flex-col">
+              <div class="text-2xl font-bold tracking-tight">Connect with Us</div>
+              <a href="https://instagram.com/hsnlptr" target="_blank" class="text-2xl tracking-tight social-link">Instagram</a>
+              <a href="https://linkedin.com/" target="_blank" class="text-2xl tracking-tight social-link">LinkedIn</a>
+              <a href="https://youtube.com/@husnulputri" target="_blank" class="text-2xl tracking-tight social-link">YouTube</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPT: Toggle mobile menu -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

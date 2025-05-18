@@ -3,100 +3,110 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Husnul Putri</title>
+  <title>Blog - Husnul Putri</title>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="flex flex-col items-center w-full bg-white">
+    <!-- Container Utama -->
     <div class="flex flex-col items-center p-10 w-full max-w-[1440px] max-md:p-8 max-sm:p-5">
-      <!-- Header -->
-      <div class="flex justify-between items-center mb-10 w-full">
+
+      <!-- Navbar -->
+      <header class="flex justify-between items-center mb-10 w-full">
         <div class="text-2xl font-bold text-black">HUSNUL PUTRI</div>
-        <div class="flex gap-11 max-md:hidden">
+        <nav class="flex gap-11 max-md:hidden">
           <a href="homepage.html" class="text-sm font-bold tracking-tight">HOME</a>
           <a href="aboutme.html" class="text-sm font-bold tracking-tight">PORTOFOLIO</a>
           <a href="blog.html" class="text-sm font-bold tracking-tight">BLOG</a>
           <a href="contact.html" class="text-sm font-bold tracking-tight">CONTACT</a>
-        </div>
+        </nav>
         <div class="hidden max-md:block cursor-pointer" id="menu-toggle">
           <i class="ti ti-menu-2 text-2xl"></i>
         </div>
-      </div>
+      </header>
 
       <!-- Blog Sections -->
-      <div class="flex flex-col gap-6">
-  <a href="blog1.html" class="block">
-    <div class="flex flex-col gap-6">
-      <div class="relative w-full h-[626px] max-md:h-[500px] max-sm:h-[300px]">
-        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/752a37b2fec7b14598684f0bc867adc01ddde15a" alt="" class="w-full h-full object-cover" />
-      </div>
-      <div class="flex justify-between items-center py-5">
-        <div class="text-2xl font-bold text-black">Find Your Perfect Skincare – Glow with Confidence!</div>
-        <div class="text-sm font-bold text-black">VIEW BLOG</div>
-      </div>
-    </div>
-  </a>
-</div>
+      <main class="flex flex-col gap-6 w-full">
+        <!-- Blog 1 -->
+        <a href="blog1.html" class="block">
+          <div class="flex flex-col gap-6">
+            <div class="relative w-full h-[626px] max-md:h-[500px] max-sm:h-[300px]">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/1b20b36551d82d7effc28133f23556b204a89c52" alt="Blog 1" class="w-full h-full object-cover" />
+            </div>
+            <div class="flex justify-between items-center py-5">
+              <h2 class="text-2xl font-bold text-black">Unlock Your Best Skin – Learn, Glow, and Thrive!</h2>
+              <span class="text-sm font-bold text-black">VIEW BLOG</span>
+            </div>
+          </div>
+        </a>
 
-        <div class="flex flex-col gap-6">
-          <div class="relative w-full h-[632px] max-md:h-[500px] max-sm:h-[300px]">
-            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/596dba137d52fa89baf1467970aa525c9f5462d5" alt="" class="w-full h-full object-cover" />
+        <!-- Blog 2 -->
+        <a href="blog2.html" class="block">
+          <div class="flex flex-col gap-6">
+            <div class="relative w-full h-[626px] max-md:h-[500px] max-sm:h-[300px]">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/596dba137d52fa89baf1467970aa525c9f5462d5" alt="Blog 2" class="w-full h-full object-cover" />
+            </div>
+            <div class="flex justify-between items-center py-5">
+              <h2 class="text-2xl font-bold text-black">Transform Your Business with Smart Strategies</h2>
+              <span class="text-sm font-bold text-black">VIEW BLOG</span>
+            </div>
           </div>
-          <div class="flex justify-between items-center py-5">
-            <div class="text-2xl font-bold text-black">Transform Your Business with Smart Strategies</div>
-            <a href="#" class="text-sm font-bold text-black">VIEW BLOG</a>
-          </div>
-        </div>
+        </a>
 
-        <div class="flex flex-col gap-6">
-          <div class="relative w-full h-[627px] max-md:h-[500px] max-sm:h-[300px]">
-            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/11d6a2f81d3a25c23ffea1f8aa15e4f764e3e082" alt="" class="w-full h-full object-cover" />
+        <!-- Blog 3 -->
+        <a href="blog3.html" class="block">
+          <div class="flex flex-col gap-6">
+            <div class="relative w-full h-[626px] max-md:h-[500px] max-sm:h-[300px]">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/11d6a2f81d3a25c23ffea1f8aa15e4f764e3e082" alt="Blog 3" class="w-full h-full object-cover" />
+            </div>
+            <div class="flex justify-between items-center py-5">
+              <h2 class="text-2xl font-bold text-black">Style Made Simple – Dress with Confidence!</h2>
+              <span class="text-sm font-bold text-black">VIEW BLOG</span>
+            </div>
           </div>
-          <div class="flex justify-between items-center py-5">
-            <div class="text-2xl font-bold text-black">Style Made Simple – Dress with Confidence!</div>
-            <a href="#" class="text-sm font-bold text-black">VIEW BLOG</a>
-          </div>
-        </div>
+        </a>
 
-        <div class="flex flex-col gap-6">
-          <div class="relative w-full h-[626px] max-md:h-[500px] max-sm:h-[300px]">
-            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/752a37b2fec7b14598684f0bc867adc01ddde15a" alt="" class="w-full h-full object-cover" />
+        <!-- Blog 4 -->
+        <a href="blog4.html" class="block">
+          <div class="flex flex-col gap-6">
+            <div class="relative w-full h-[626px] max-md:h-[500px] max-sm:h-[300px]">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/752a37b2fec7b14598684f0bc867adc01ddde15a" alt="Blog 4" class="w-full h-full object-cover" />
+            </div>
+            <div class="flex justify-between items-center py-5">
+              <h2 class="text-2xl font-bold text-black">Find Your Perfect Skincare – Glow with Confidence!</h2>
+              <span class="text-sm font-bold text-black">VIEW BLOG</span>
+            </div>
           </div>
-          <div class="flex justify-between items-center py-5">
-            <div class="text-2xl font-bold text-black">Find Your Perfect Skincare – Glow with Confidence!</div>
-            <a href="#" class="text-sm font-bold text-black">VIEW BLOG</a>
-          </div>
-        </div>
-      </div>
+        </a>
+      </main>
     </div>
 
     <!-- Footer -->
-    <div class="px-8 py-10 w-full bg-zinc-300 max-sm:px-5">
+    <footer class="px-8 py-10 w-full bg-zinc-300 max-sm:px-5">
       <div class="flex justify-between mx-auto max-w-[1440px] max-md:flex-col max-md:gap-10">
         <div class="text-2xl font-bold text-black">© 2025 Husnul Putri. All Rights Reserved.</div>
         <div class="flex gap-16 max-sm:flex-col max-sm:gap-8">
-          <div class="flex flex-col gap-2.5">
-            <div class="ml-auto text-2xl font-bold text-black">Support</div>
-            <div class="flex flex-col gap-1.5 ml-auto">
-              <div class="ml-auto text-2xl text-black">Help Center</div>
-              <div class="ml-auto text-2xl text-black">Terms of Service</div>
-              <div class="ml-auto text-2xl text-black">Privacy Policy</div>
+          <div class="flex flex-col gap-2.5 text-left-align max-sm:text-center">
+            <div class="text-2xl font-bold text-black">Support</div>
+            <div class="flex flex-col gap-1.5">
+              <span class="text-2xl text-black">Help Center</span>
+              <span class="text-2xl text-black">Terms of Service</span>
+              <span class="text-2xl text-black">Privacy Policy</span>
             </div>
           </div>
-          <div class="flex flex-col gap-2.5">
-            <div class="ml-auto text-2xl font-bold text-black">Connect with Us</div>
+          <div class="flex flex-col gap-2.5 text-left-align max-sm:text-center">
+            <div class="text-2xl font-bold text-black">Connect with Us</div>
             <div class="flex flex-col gap-1.5">
-              <div class="ml-auto text-2xl text-black">Instagram</div>
-              <div class="ml-auto text-2xl text-black">LinkedIn</div>
-              <div class="ml-auto text-2xl text-black">YouTube</div>
+              <span class="text-2xl text-black">Instagram</span>
+              <span class="text-2xl text-black">LinkedIn</span>
+              <span class="text-2xl text-black">YouTube</span>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   </div>
-  <script src="script.js"></script>
 </body>
 </html>
